@@ -121,6 +121,7 @@ function TinyPNG(opt, obj) {
                         }
 
                         self.hash.update(curr.file, curr.hash);
+                            self.hash.write(); // write sigs after compressed, even if the task not end
                     }
 
                     this.push(tinyFile);
@@ -135,7 +136,6 @@ function TinyPNG(opt, obj) {
             self.utils.log(err.message);
         })
         .on('end', function() {
-            if(!emitted && opt.sigFile) self.hash.write(); // write sigs after complete
             if(opt.summarize) {
                 var stats = self.stats,
                     info = util.format('Skipped: %s image%s, Compressed: %s image%s, Savings: %s (ratio: %s)',
