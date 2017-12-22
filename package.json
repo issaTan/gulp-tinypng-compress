@@ -1,16 +1,16 @@
 {
-  "name": "gulp-tinypng-compress",
-  "version": "1.2.1",
+  "name": "gulp-tinypng-compress-warpper",
+  "version": "1.0.0",
   "description": "TinyPNG API wrapper for compressing PNG & JPG images",
   "main": "index.js",
-  "repository": "stnvh/gulp-tinypng-compress",
+  "repository": "issaTan/gulp-tinypng-compress",
   "scripts": {
     "test": "mocha"
   },
   "author": {
-    "name": "Stan Hutcheon",
-    "email": "stanutcheon@me.com",
-    "url": "https://github.com/stnvh"
+    "name": "Issa Tan",
+    "email": "tanxinhao.1990@gmail.com",
+    "url": "https://github.com/issaTan"
   },
   "contributors": [
     {
